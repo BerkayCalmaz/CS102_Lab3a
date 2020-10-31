@@ -25,14 +25,6 @@ public class ShapeTester{
         int shapeInput;
         ShapeContainer shapes = new ShapeContainer();
 
-//        Rectangle rec1 = new Rectangle( 3, 5  );
-//        Triangle tri1 = new Triangle( 3, 4, 5);
-//        Square sqr1 = new Square( 4 );
-//        Circle crc1 = new Circle( 7 );
-//        shapes.add( rec1 );
-//        shapes.add( tri1 );
-//        shapes.add( sqr1 );
-//        shapes.add( crc1 );
         do{
             menu();
             System.out.println("Select one option: ");
@@ -144,16 +136,6 @@ public class ShapeTester{
 
 
     }
-
-
-//        System.out.println( shapes.getArea() );
-//        System.out.println( shapes.getPerimeter() );
-//        System.out.println( shapes.toString() );
-//
-//        crc1.setLocation(3,5);
-//        tri1.setLocation(7,-8);
-//        rec1.setLocation(2,2);
-
         /*
         If you comment circle's getArea method, compiler gives an error because it extends an abstract
         class and it does not override one of its methods.
