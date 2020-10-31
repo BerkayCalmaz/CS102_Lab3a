@@ -33,7 +33,7 @@ public class ShapeContainer {
     public String toString(){
         String totalToString = "";
         for( int i = 0; i < shapes.size(); i++ ) {
-            totalToString = totalToString + "\n" + ("The area is: " + shapes.get(i).getArea() + " The perimeter is: " + shapes.get(i).getPerimeter());
+            totalToString = totalToString +  ("The area is: " + shapes.get(i).getArea() + " The perimeter is: " + shapes.get(i).getPerimeter()) +  "\n";
         }
     return totalToString;
     }
