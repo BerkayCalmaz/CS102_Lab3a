@@ -33,9 +33,29 @@ public class ShapeContainer {
     public String toString(){
         String totalToString = "";
         for( int i = 0; i < shapes.size(); i++ ) {
-            totalToString = totalToString +  ("The area is: " + shapes.get(i).getArea() + " The perimeter is: " + shapes.get(i).getPerimeter()) +  "\n";
+            totalToString = totalToString + shapes.get(i).toString() + "\n";
         }
     return totalToString;
+    }
+
+    public Shape findShape(int x, int y){
+        for( int i = 0; i < shapes.size(); i++){
+            if( shapes.get(i).getX() == x && shapes.get(i).getY() == y ){
+                return shapes.get(i);
+            }
+        }
+        return null;
+    }
+
+    public void deleteSelected(){
+        int counter = 0;
+        for( int i = 0; i < shapes.size(); i++){
+            if( shapes.get(i).getSelected() ){
+                shapes.remove(i);
+                System.out.println( counter + " shape is deleted" );
+                counter++;
+            }
+        }
     }
 
 }
