@@ -8,14 +8,6 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
-    /**
-     * A constructor for square subclass. !!! IS THIS AN OKAY IMPLEMENTATION? IS THERE A BETTER WAY???
-     */
-    public Rectangle( int side){
-        this.width = side;
-        this.height = side;
-    }
-
     @Override
     public double getArea() {
         return ( width * height );

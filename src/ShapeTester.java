@@ -10,9 +10,13 @@ public class ShapeTester {
         shapes.add( sqr1 );
         shapes.add( crc1 );
 
-        System.out.println( shapes.getArea() );
-        System.out.println( shapes.getPerimeter() );
-        System.out.println( shapes.toString() );
+//        System.out.println( shapes.getArea() );
+//        System.out.println( shapes.getPerimeter() );
+//        System.out.println( shapes.toString() );
+
+        crc1.setLocation(3,5);
+        System.out.println( crc1.getX() );
+        System.out.println(sqr1.getX());
 
         /*
         If you comment circle's getArea method, compiler gives an error because it extends an abstract
