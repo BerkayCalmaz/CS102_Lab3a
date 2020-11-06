@@ -1,6 +1,9 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-
+/**
+ * Author: Berkay Çalmaz
+ * Date: 6.11.2020
+ */
 public class ShapeTester{
 
     public static void menu(){
@@ -89,9 +92,9 @@ public class ShapeTester{
                         c = scan.nextInt();
                         if( (a + b) >= c && (b + c) >= a && (c + a) >= b ) {
                             Triangle tri1 = new Triangle(a, b, c);
-                            System.out.println("Enter the x location: ");
+                            System.out.println("Enter the x location of the intersection of bisection point: ");
                             x = scan.nextInt();
-                            System.out.println("Enter the y location:");
+                            System.out.println("Enter the y location of the intersection of bisection point: ");
                             y = scan.nextInt();
                             tri1.setLocation(x, y);
                             shapes.add(tri1);
@@ -115,8 +118,8 @@ public class ShapeTester{
                 x = scan.nextInt();
                 System.out.println( "Enter the y location" );
                 y = scan.nextInt();
-                if( shapes.findShape(x,y ) != null){
-                    shapes.findShape(x,y ).setSelected(true);
+                if( shapes.findShape( x,y ) != null){
+                    shapes.findShape( x,y ).setSelected(true);
                     System.out.println( "Shape is found and selected" );
                 }
                 else{

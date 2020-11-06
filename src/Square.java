@@ -1,3 +1,7 @@
+/**
+ * Author: Berkay Çalmaz
+ * Date: 6.11.2020
+ */
 public class Square extends Rectangle{
 
     private int side;
@@ -6,6 +10,5 @@ public class Square extends Rectangle{
         super( side, side );
         this.side = side;
     }
-
 
 }
